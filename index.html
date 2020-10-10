@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" type= "text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.12.1.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Flexbox</title>
@@ -24,7 +25,35 @@
 
         </nav>
 
+        <div style="margin: 20px"><span>Layout:</span><a href="#" class="stack">Stack</a>
+        <a href="#" class="grid">Grid</a></div>
 
+        <section id="blocks">
+            <article>
+                <h2>I pity the fool...</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam eos labore aperiam optio atque ducimus dicta temporibus non delectus earum facere, harum similique reprehenderit maxime cum sunt obcaecati, veritatis voluptatum.</p>
+            </article>
+            <article>
+                <h2>Get to the choppper...</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis commodi facere odit ea quo incidunt ullam maxime a eius earum voluptate labore excepturi dolor, in, quibusdam nam eligendi expedita laborum!</p>
+            </article>
+            <article>
+                <h2>What's a horse doing on a spaceship...</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate rerum nisi delectus labore. Labore assumenda aspernatur eligendi. Voluptatibus est, dolore veniam asperiores nisi possimus. Dolore tenetur doloremque et nulla quas.</p>
+            </article>
+            <article>
+                <h2>I pity the fool...</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo veritatis quidem nisi fuga quas, eveniet aperiam quae quisquam quasi enim perferendis est aliquam deleniti illo obcaecati doloribus esse suscipit iusto.</p>
+            </article>
+            <article>
+                <h2>Get to the choppper...</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis commodi facere odit ea quo incidunt ullam maxime a eius earum voluptate labore excepturi dolor, in, quibusdam nam eligendi expedita laborum!</p>
+            </article>
+            <article>
+                <h2>What's a horse doing on a spaceship...</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate rerum nisi delectus labore. Labore assumenda aspernatur eligendi. Voluptatibus est, dolore veniam asperiores nisi possimus. Dolore tenetur doloremque et nulla quas.</p>
+            </article>
+        </section>
 
 
 
@@ -32,5 +61,13 @@
 
 
     </div>
+    <script>
+        $("a.stack").on("click", function(){
+            $("article").addClass("stack");
+        });
+        $("a.grid").on("click", function(){
+            $("article").removeClass("stack");
+        });
+    </script>
 </body>
 </html>
